@@ -6,8 +6,8 @@ import hashlib
 #creates a maximum number of combinations
 from itertools import permutations
 
-og_hash="a497453fe1eee3e0c4d44f2a74a1518744d247a1c6dd6c902a2b3367987f0e5d21fb1cbdd1af55ea78098be5a336ffaf06f19b8e5a5997e06d20ce00f9907424"
-flag ="FS{hash-I_had_corned_beef_and_hash_"
+og_hash=""
+flag =""
 hex_lst=['A','B','C','D','E','F','0','1','2','3','4','5','6','7','8','9']
 
 def sha_something():
@@ -17,7 +17,7 @@ def sha_something():
         i = i[0] + i[1] +i[2]
         
         
-        test_flag = ("FS{hash-I_had_corned_beef_and_hash_" + str(i) + "}")
+        test_flag = ("" + str(i) + "}")
 
   
         sha_512 = hashlib.sha512((test_flag).encode()).hexdigest()

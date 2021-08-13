@@ -6,8 +6,8 @@ import hashlib
 #creates a maximum number of combinations
 from itertools import permutations
 
-og_hash=""
-flag =""
+og_hash="(INSERT_YOUR_ORIGINAL_HASH_HERE"
+flag ="FLAG{READABLETEXT_READABLETEXT_THISPARTISACOMBOFNUMBERSANDLETTERSYOURETRYINGTOFIND}"
 hex_lst=['A','B','C','D','E','F','0','1','2','3','4','5','6','7','8','9']
 
 def sha_something():
@@ -17,7 +17,7 @@ def sha_something():
         i = i[0] + i[1] +i[2]
         
         
-        test_flag = ("" + str(i) + "}")
+        test_flag = ("{READABLETEXT_READABLETEXT_" + str(i) + "}")
 
   
         sha_512 = hashlib.sha512((test_flag).encode()).hexdigest()
